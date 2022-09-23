@@ -46,7 +46,7 @@ public class driver {
         System.out.println("New Fuel Level: "+requesting.peek().getGallonsOfFuelRemaining());
         System.out.println("\n**\n");
 
-        while (!requesting.isEmpty()) {
+        while (!requesting.isEmpty() && BOATSDOCKED <= MAXCAPACITYDOCK) {
             //while requesting has entry add them to dock and then remove from requesting
             Boat firstRequest = requesting.peek();
             System.out.println("Docking " + firstRequest.getName() + " ID# " + firstRequest.getRegistrationID());
