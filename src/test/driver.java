@@ -93,6 +93,7 @@ public class driver {
             //while dock is not empty it will take in the new requesting boat to dock.
 
             Boat boat = docked.remove();
+            BOATSDOCKED--;
             System.out.println(boat.getName() + "(" + boat.getRegistrationID() + ")" + " is leaving the dock now now.");
         }
     }
